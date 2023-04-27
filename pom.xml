@@ -6,17 +6,17 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.5</version>
+        <version>3.0.2</version>
         <relativePath/>
     </parent>
 
-    <groupId>org.example</groupId>
-    <artifactId>lambdaspringfunctions</artifactId>
+    <groupId>org.example.spring</groupId>
+    <artifactId>lambda-functions</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <java.version>11</java.version>
-        <spring-cloud.version>2021.0.5</spring-cloud.version>
+        <java.version>17</java.version>
+        <spring-cloud.version>2022.0.2</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -36,9 +36,14 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-function-web</artifactId>
-            <version>4.0.2</version>
+            <scope>compile</scope>
         </dependency>
         <!--        For local development only -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

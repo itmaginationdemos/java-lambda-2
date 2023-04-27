@@ -1,4 +1,4 @@
-package org.example;
+package org.example.itm;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -27,7 +27,7 @@ public class CloudFunctionApplication {
 
     @Bean
     public Consumer<String> lambdaHandlerWithConsumer() {
-        return (s) -> System.out.println("Lambda consumer handler was triggered:" + s);
+        return str -> System.out.println("Lambda consumer handler was triggered:" + str);
     }
 
 }
